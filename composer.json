@@ -1,0 +1,35 @@
+{
+  "name": "chaos/resolver",
+  "description": "Helpful classes for transforming various query parameters into predefined array formats",
+  "keywords": [
+    "vietnam",
+    "query",
+    "resolver"
+  ],
+  "homepage": "https://github.com/ntd1712",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "ntd1712",
+      "email": "ntd1712@mail.com"
+    }
+  ],
+  "require": {
+    "laminas/laminas-db": "2.11.*",
+    "nesbot/carbon": "^2.17",
+    "voku/anti-xss": "4.1.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Chaos\\Support\\Resolver\\": "src/"
+    },
+    "files": [
+      "autoload/functions.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  }
+}
