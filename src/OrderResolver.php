@@ -163,7 +163,7 @@ class OrderResolver
                 foreach ($matches as $property) {
                     $order[] = [
                         'property' => trim($property, '-+ '),
-                        'direction' => false === strpos($property, '-') ? null : 'desc'
+                        'direction' => 0 === strpos($property, '-') ? null : 'desc'
                     ];
                 }
             } else {
